@@ -35,3 +35,8 @@ function redirectToRoomName(name)
   localStorage.setItem("room-name", name);
   window.location = "jittery_page.html"
 }
+function logout() {
+  localStorage.removeItem("user_name")
+  localStorage.removeItem("room_name")
+  window.location = "index.html"
+}
